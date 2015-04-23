@@ -1,51 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<!doctype html>
-<html>
-<head>
-  <title>Recipe</title><!-- Have it return the selected recipe?1? -->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="public/stylesheets/style.css">
-</head>
-
-<body>
-  <form class="form-horizontal">
-    <div class="form-group">
-      <label for="inputEmail3" class="col-sm-2 control-label"></label>
-      <div class="col-sm-10">
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-      </div>
+<form class="form-inline" action="get">
+  <div class="form-group">
+    <label class="sr-only" for="InputEmail">Email address</label>
+    <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="InputPassword">Password</label>
+    <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Sign in</button>
+  <button type="submit" class="btn btn-default"><a href="signup.html">Create Profile</a></button>
+</form>
+<form class="form-horizontal">
+<div class="title-signup">
+    <h1 id="signup-title"><strong><em>Sign Up</em></strong></h1>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label"></label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="EmailSignup" placeholder="Email">
     </div>
-    <div class="form-group">
-      <label for="inputPassword3" class="col-sm-2 control-label"></label>
-      <div class="col-sm-10">
-        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-      </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label"></label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="PasswordSignup" placeholder="Password">
     </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-      </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
     </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Sign in</button>
-      </div>
-      <div class="title">
-      <img class="FridgeInside" src="public/images/choppingblock.jpg" height="600px" width="1300px">
-        <h1 id="signup-title"><strong><em>Sign Up</em></strong></h1>
-      </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
     </div>
-  </form>
-  
-</body>
-
-
-
-</html>
+  </div>
+</form>
