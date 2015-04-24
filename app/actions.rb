@@ -2,17 +2,12 @@ enable :sessions
 
 helpers do
   def current_user
-    begin
-      @current_user = User.find(session["user_id"].to_i)
-      rescue
-        @current_user = nil
-      end
-    end
+    @current_user ||= User.find(session[:user_id])
   end
-# Homepage (Root path)
+end
+
 get '/' do
   erb :index
-  # @current_user = User.where(id: session[:user_id]).first
 end
 
 get '/signup' do
@@ -34,11 +29,13 @@ post '/signup' do
     erb :'user/new'
   end
 
-  post '/login' do
-    @current_user = User.where(username: params[:username], password:  params[:password]).first
-    session[:user_id] = @current_user.id
-    redirect '/'
-  end
-  
 end
+
+post '/login' do
+  @current_user = User.where(username: params[:username], password:  params[:password]).first
+  session[:user_id] = @current_user.id
+  redirect '/'
+end
+  
+
 
