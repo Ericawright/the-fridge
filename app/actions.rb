@@ -31,11 +31,15 @@ post '/signup' do
 
 end
 
+get '/login' do
+  erb :login
+end
+
 post '/login' do
   @current_user = User.where(username: params[:username], password:  params[:password]).first
   session[:user_id] = @current_user.id
   redirect '/'
 end
-  
+
 
 
