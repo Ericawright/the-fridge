@@ -9,10 +9,9 @@ helpers do
       end
     end
   end
-# Homepage (Root path)
+  
 get '/' do
   erb :index
-  # @current_user = User.where(id: session[:user_id]).first
 end
 
 get '/signup' do
