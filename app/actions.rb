@@ -21,14 +21,13 @@ post '/signup' do
     email: params[:email]
     )
   if @user.save
-    @current_user = User.where(username: params[:username], password:  params[:password]).first
-    puts @current_user
-    session[:user_id] = @current_user.id
+    # user = User.where(username: params[:username], password:  params[:password]).first
+    # puts @current_user
+    session[:user_id] = @user.id
     redirect '/'
   else
     erb :'user/new'
   end
-
 end
 
 get '/login' do
@@ -36,8 +35,8 @@ get '/login' do
 end
 
 post '/login' do
-  @current_user = User.where(username: params[:username], password:  params[:password]).first
-  session[:user_id] = @current_user.id
+  user = User.where(username: params[:username], password:  params[:password]).first
+  session[:user_id] = user.id
   redirect '/'
 end
 

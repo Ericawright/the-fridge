@@ -1,5 +1,9 @@
 <div class="title">
   <h1><strong><em>What's in your fridge?</em></strong></h1>
+  <% if current_user %>
+      <h2>Logged in as <%= current_user.username %></h2>
+  <% end %>
+ 
   <form id="searchbox" action="">
     <input id="search" type="text" placeholder="Type here">
     <input id="submit" type="submit" value="Let's Cook!">
