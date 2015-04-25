@@ -1,3 +1,5 @@
+require 'httparty'
+
 enable :sessions
 
 helpers do
@@ -6,7 +8,6 @@ helpers do
       @current_user ||= User.find(session[:user_id])
     end
   end
-
 end
 
 get '/' do
@@ -24,8 +25,6 @@ post '/signup' do
     email: params[:email]
     )
   if @user.save
-    # user = User.where(username: params[:username], password:  params[:password]).first
-    # puts @current_user
     session[:user_id] = @user.id
     redirect '/'
   else
@@ -38,7 +37,7 @@ get '/login' do
 end
 
 post '/login' do
-  user = User.where(username: params[:username], password:  params[:password]).first
+  user = User.where(username: params[:username], password: params[:password]).first
   session[:user_id] = user.id
   redirect '/'
 end
@@ -47,6 +46,32 @@ get '/logout' do
   session.delete :user_id
   redirect '/'
 end
+
+post '/results' do
+  gather_params = []
+  params[:ingred].each do |x|
+    x.gsub(' ', '+')
+    gather_params << x
+  end
+  
+  @formatted_params = gather_params.join('&allowedIngredient[]=')
+
+  @query = HTTParty.get("http://api.yummly.com/v1/api/recipes?_app_id=dde5d0a1&_app_key=415fb0f76cf84cce66da1807fe54369d&allowedIngredient[]=#{@formatted_params}")
+
+  # @detail_link = HTTParty.get("http://api.yummly.com/v1/api/recipe/#{@query['matches'][@selection][@id]}?_app_id=dde5d0a1&_app_key=415fb0f76cf84cce66da1807fe54369d")
+  erb :results
+end
+
+post '/search' do
+
+end
+
+
+
+
+
+
+
 
 
 
