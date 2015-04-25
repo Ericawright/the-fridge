@@ -17,20 +17,21 @@
 </fieldset> -->
 
 <div id="results">
-<%@query['matches'].each do |match|%>
-  <%=match['id']%>
+  <%@query['matches'].each do |match|%>
   <br><br>
-  <%=match['rating']%>
+  <h3 class="recipe_name"><%=match['recipeName']%></h3>
   <br><br>
-  <%=match['totalTimeInSeconds']%>
-  <br><br>
-  <%=match['recipeName']%>
-  <br><br>
-  <%=match['ingredients']%>
-  <br><br>
-  <%=match['imageUrlsBySize']['90']%>
-  <br><br>
-<%end%>
+  <div class="image-results">
+    <img width="300px" height="300px" src="<%=match['imageUrlsBySize']['90']%>"> 
+  </div> 
+  <br>
+  <br>
+  <div class="recipe-details">
+    <p class="time">Cooking time: <%=match['totalTimeInSeconds']%></p>
+    <p class="rating2">Rating: <%=match['rating']%><p>
+      <li>Ingredients: <%=match['ingredients'].join(", x")%></li>
+    </div>
+    <%end%>
 
 
 

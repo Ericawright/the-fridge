@@ -46,13 +46,14 @@ body.results {
 }
 
 h1 {
+  font-family: 'Laila', serif;
   position: absolute;
   top: 0;
   margin-top: 4em;
   margin-left: 31%;
-  color: #3867F5;
+  color: white;
   font-size: 45px;
-  text-shadow: 2px 0px 0px white;
+  text-shadow: 2px 2px 2px black;
   letter-spacing: 3px;
 }
 
@@ -88,13 +89,13 @@ h1 {
 
 .navbar-brand {
   font-size: 3em;
+  font-family: 'Laila', serif;
 }
 
-/*below is the 'searchbox' css for the search boxes*/
+/*below is the 'searchbox' css for the search boxes
 
 #searchbox {
   background-color: #229cdc;
-  background-image: linear-gradient(#3867F5);
   border-radius: 35px;    
   border-width: 1px;
   border-style: solid;
@@ -142,7 +143,7 @@ h1 {
   border-radius: 20px;
   font-size: 18px;
   margin-left: 4px;
-}
+}*/
 
 h2 {
   font-size: 13px;
@@ -212,5 +213,28 @@ h2 {
   left:2px;
 }
 
+/*below is the css for the results page
+*/
+
+.image-results {
+  margin-left: 20%;
+  margin-bottom: 20%;
+  position: absolute;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px #747070;
+}
+
+.recipe_name {
+  margin-left: 46%;
+  margin-bottom: -5%;
+}
+
+
+.recipe-details {
+  margin-left: 46%;
+  margin-bottom: 10%;
+  margin-right: 20%;
+  font-size: 1.5em;
+}
 
 
