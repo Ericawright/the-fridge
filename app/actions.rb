@@ -2,8 +2,11 @@ enable :sessions
 
 helpers do
   def current_user
-    @current_user ||= User.find(session[:user_id])
+    if session[:user_id]
+      @current_user ||= User.find(session[:user_id])
+    end
   end
+
 end
 
 get '/' do
@@ -37,6 +40,11 @@ end
 post '/login' do
   user = User.where(username: params[:username], password:  params[:password]).first
   session[:user_id] = user.id
+  redirect '/'
+end
+
+get '/logout' do
+  session.delete :user_id
   redirect '/'
 end
 

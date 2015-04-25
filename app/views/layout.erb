@@ -35,7 +35,13 @@
       <a class="navbar-brand"><em>What's in your fridge?</em></a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-    <li><a href="/login">Login</a></li>
+    <li>
+      <% if current_user %>
+        <a href="/logout">Logout</a>
+      <% else %>
+        <a href="/login">Login</a>
+      <% end %>
+    </li>
       <li><a href="/signup">Create Profile</a></li>
     </ul>
   </div>
