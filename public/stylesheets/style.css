@@ -3,13 +3,22 @@ html {
   min-height: 100%;
   min-width: 100%;
 }
-body {
-  background-image: url("../images/fridge.jpg");
+
+body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   min-height: 100%;
   min-width: 100%;
+  background-attachment: fixed;
+}
+
+body.homepage {
+  background-image: url("../images/fridge.jpg");
+}
+
+body.results {
+  background-image: url("../images/empty-fridge.jpg");
 }
 
 /*below is the css for the forms*/
