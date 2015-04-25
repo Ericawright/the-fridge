@@ -1,3 +1,4 @@
+/*above is the css for the background images in the erb's*/
 html {
   min-height: 100%;
   min-width: 100%;
@@ -10,6 +11,8 @@ body {
   min-height: 100%;
   min-width: 100%;
 }
+
+/*below is the css for the forms*/
 
 .form-inline {
   display: block;
@@ -72,10 +75,13 @@ h1 {
   width: 40%;
 }
 
+/*below is the css for the navigation bar*/
+
 .navbar-brand {
   font-size: 3em;
 }
 
+/*below is the 'searchbox' css for the search boxes*/
 
 #searchbox {
   background-color: #229cdc;
@@ -95,6 +101,24 @@ h1 {
   box-shadow: 7px 5px 5px #808080;
 }
 
+#searchbox-results {
+  background-color: #229cdc;
+  background-image: linear-gradient(#3867F5);
+  border-radius: 35px;    
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c4d9df #a4c3ca #83afb7;            
+  width: 500px;
+  height: 60px;
+  padding: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  margin-top: 6em;
+  margin-left: 32%;
+  box-shadow: 7px 5px 5px #808080;
+}
+
 #search {
   width: 325px;
   height: 35px;
@@ -110,5 +134,74 @@ h1 {
   font-size: 18px;
   margin-left: 4px;
 }
+
+h2 {
+  font-size: 13px;
+  margin-left: 73em;
+  margin-top: 1.4em;
+}
+
+#recipes {
+  width: 40%;
+  height: 40%;
+  margin-left: 31.6%;
+  margin-top: 7.5em;
+}
+
+/*below is all the css for the 5 star rating system*/
+
+.rating {
+  float:right;
+  margin-right: 28.5%;
+}
+.rating:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+  clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+  float:right;
+  width:1em;
+  padding:0 .1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:200%;
+  line-height:1.2;
+  color:#ddd;
+  text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+  content: '★ ';
+}
+
+.rating > input:checked ~ label {
+  color: #f70;
+  text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: gold;
+  text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #ea0;
+  text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+  position:relative;
+  top:2px;
+  left:2px;
+}
+
 
 

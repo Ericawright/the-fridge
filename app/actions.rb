@@ -48,5 +48,9 @@ get '/logout' do
   redirect '/'
 end
 
+get '/results' do
+  erb :results
+end
+
 
 
