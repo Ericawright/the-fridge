@@ -17,11 +17,12 @@
 </fieldset> -->
 
 <%@query['matches'].each do |match|%>
-<div class="row matches">
-  <div class="col-md-4 col-md-offset-2 left" id="results-left"><img class="image-results" width="300px" height="300px" src="<%=match['imageUrlsBySize']['90']%>"> </div>
-  <div class="col-md-6 right" id="results-right">
-    <h3 class="recipe_name"><strong><em><%=match['recipeName']%></em></strong></h3>
-    <p class="rating2"><strong>Rating: </strong><%=match['rating']%><p>
+  <div class="row matches">
+    <div class="col-md-4 col-md-offset-2 left" id="results-left"><img class="image-results" width="300px"height="300px" src="<%=match['imageUrlsBySize']['90']%>"> 
+    </div>
+    <div class="col-md-6 right" id="results-right">
+      <h3 class="recipe_name"><strong><em><%=match['recipeName']%></em></strong></h3>
+      <p class="rating2"><strong>Rating: </strong><%=match['rating']%><p>
       <li class="ingredients"><strong>Ingredients: </strong><%=match['ingredients'].join(", ")%></li>
     </div>
   </div>
@@ -29,6 +30,4 @@
 
 
 
-
- <a href = "http://api.yummly.com/v1/api/recipes?_app_id=dde5d0a1&_app_key=415fb0f76cf84cce66da1807fe54369d&q=onion+soup">click me</a>
 

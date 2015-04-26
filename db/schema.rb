@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20150425223104) do
     t.string   "name"
     t.integer  "cook_time"
     t.text     "body"
+    t.string   "picture"
     t.decimal  "rating",     default: 0.0
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false

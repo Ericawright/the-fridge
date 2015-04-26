@@ -4,6 +4,7 @@ class Recipes < ActiveRecord::Migration
       t.string :name
       t.integer :cook_time
       t.text :body
+      t.string :picture
       t.decimal :rating, default: 0
       t.timestamps null: false
     end

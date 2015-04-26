@@ -1,5 +1,3 @@
-<% @body_class = "homepage" %>
-
 
 <div class="container-fluid">
   <div class="row">
@@ -9,16 +7,10 @@
   </div>
   <div class="row">
     <div class="col-md-8 col-md-offset-2 search">
-      <form id="searchbox" action="/search" method="post">
-        <input name = 'ingredients[]' id="search" type="text" placeholder="Type here">
+      <form id="searchbox" action="/results" method="post">
+        <input name = 'ingred[]' id="search" type="text" placeholder="Type here">
         <input id="submit" type="submit" value="Let's Cook!">
       </form>
     </div>
   </div>
 </div>
-
-<a href = './yummly'>USE YUMMLY!</a> 
-
-
-
-

@@ -1,5 +1,18 @@
-<div id="localresults">
-<form id="searchbox" action="/search" method="post">
-    <input name = 'ingredients[]' id="search" type="text" placeholder="Type here">
-    <input id="submit" type="submit" value="Let's Cook!">
-  </form>
+
+<% @body_class = "results" %>
+
+<div id="results">
+  <%@display_result.each do |match|%>
+  <br><br>
+  <h3 class="recipe_name"><%=match[:name]%></h3>
+  
+  <br>
+  <br>
+  <div class="recipe-details">
+    <p class="time">Cooking time: <%=match[:cook_time]%></p>
+    <p class="rating2">Rating: <%=match[:picture]%><p>
+    </div>
+    <%end%>
+
+ </div>
+

@@ -52,6 +52,10 @@ get '/logout' do
   redirect '/'
 end
 
+get '/yummly' do
+  erb :yummly
+end
+
 post '/results' do
   gather_params = []
   params[:ingred].each do |x|
@@ -63,19 +67,20 @@ post '/results' do
 
   @query = HTTParty.get("http://api.yummly.com/v1/api/recipes?_app_id=dde5d0a1&_app_key=415fb0f76cf84cce66da1807fe54369d&allowedIngredient[]=#{@formatted_params}")
 
-  # @detail_link = HTTParty.get("http://api.yummly.com/v1/api/recipe/#{@query['matches'][@selection][@id]}?_app_id=dde5d0a1&_app_key=415fb0f76cf84cce66da1807fe54369d")
   erb :results
 end
-get '/search' do
-  erb :search
-end
+
+
+
 post '/search' do
-  local_params = []
-  params[:ingredients].each do |x|
-    p Ingredient.where(name: x)
+  @display_result = []
+  Recipe.all.each do |recipe|
+    if recipe.ingredients.count <= params[:ingredients].length
+      if recipe.ingredients.all? {|ingredient| params[:ingredients].include?(ingredient.name)}
+        @display_result << recipe
+      end
+    end
   end
-
-
   erb :search
 end
 
