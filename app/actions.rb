@@ -73,12 +73,14 @@ end
 
 
 post '/search' do
-  local_params = []
-  @local_matches = params[:ingredients].each do |x|
-    puts Ingredient.where(name: x)
-  end
 
-
+  display_result = []
+  Recipe.all.each do |recipe|
+    if recipe.ingredients.count < params[:ingredients].length
+      if recipe.ingredients.name.all? {|ingredient| params[:ingredients].include?(ingredient)}
+        display_result << recipe
+      end
+    end
   erb :search
 end
 
