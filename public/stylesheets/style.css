@@ -45,7 +45,7 @@ body.results {
   border: 2px solid #3867F5;
 }
 
-h1 {
+/*h1 {
   font-family: 'Laila', serif;
   position: absolute;
   top: 0;
@@ -55,7 +55,7 @@ h1 {
   font-size: 45px;
   text-shadow: 2px 2px 2px black;
   letter-spacing: 3px;
-}
+}*/
 
 #login-title {
   position: absolute;
@@ -216,25 +216,43 @@ h2 {
 /*below is the css for the results page
 */
 
-.image-results {
-  margin-left: 20%;
-  margin-bottom: 20%;
-  position: absolute;
+#results-left {
+  padding-left: 6%;
+  margin-top: 2%;
+}
+ 
+ .image-results {
   border: 2px solid black;
   box-shadow: 10px 10px 10px #747070;
 }
 
-.recipe_name {
-  margin-left: 46%;
-  margin-bottom: -5%;
-}
-
-
-.recipe-details {
-  margin-left: 46%;
-  margin-bottom: 10%;
-  margin-right: 20%;
+.rating2 {
   font-size: 1.5em;
 }
 
+.ingredients {
+  font-size: 1.3em;
+  margin-right: 25%;
+}
 
+.recipe_name {
+  margin-right: 25%;
+}
+
+.col-md-8.col-md-offset-2{
+  display: table-cell;
+  height: 150px;
+}
+
+.wiyf {
+  font-family: 'Laila', serif;
+  color: white;
+  font-size: 45px;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 3px;
+  margin-left: 15%;
+  margin-top: 2em;
+}
+.col-md-8.search {
+  height: 150px;
+}
