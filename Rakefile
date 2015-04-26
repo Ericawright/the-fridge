@@ -143,7 +143,8 @@ Roast in the preheated oven until squash is tender and lightly browned, 25 to 30
  Poke each potato with the tines of a fork. Place the potatoes in a microwave oven, and cook on high power for about 5 minutes. Check about halfway through, and turn potatoes over for even cooking. Slice each potato in half the long way and cook potatoes another 2 minutes on high power.
 Preheat a grill for medium heat.
 Brush the potato tops with olive oil, and season with salt and pepper to taste.
-Cook on prepared grill for 15 to 20 minutes, turning once.", picture: '#').ingredients << Ingredient.find(27) << Ingredient.find(8) << Ingredient.find(9) << Ingredient.find(21)
+Cook on prepared grill for 15 to 20 minutes, turning once.", picture: '#').ingredients << Ingredient.find(27) 
+  # << Ingredient.find(8) << Ingredient.find(9) << Ingredient.find(21)
 
   Recipe.create!(name: "Glazed Carrots", cook_time: 1500, body: "2 pounds carrots, peeled and cut into sticks
  1/4 cup butter
@@ -151,6 +152,9 @@ Cook on prepared grill for 15 to 20 minutes, turning once.", picture: '#').ingre
  1/4 teaspoon salt
  1/8 teaspoon ground white pepper
  Place carrots into a large saucepan, pour in enough water to reach depth of 1 inch, and bring to a boil. Reduce heat to low, cover, and simmer carrots until tender, 8 to 10 minutes. Drain and transfer to a bowl.
-Melt butter in the same saucepan; stir brown sugar, salt, and white pepper into butter until brown sugar and salt have dissolved. Transfer carrots into brown sugar sauce; cook and stir until carrots are glazed with sauce, about 5 more minutes.", picture: '#').ingredients << Ingredient.find(88) << Ingredient.find(8) << Ingredient.find(9) << Ingredient.find(11)
+Melt butter in the same saucepan; stir brown sugar, salt, and white pepper into butter until brown sugar and salt have dissolved. Transfer carrots into brown sugar sauce; cook and stir until carrots are glazed with sauce, about 5 more minutes.", picture: '#').ingredients << Ingredient.find(28) 
+   # << Ingredient.find(8) << Ingredient.find(9) << Ingredient.find(11)
 
 end
+
+

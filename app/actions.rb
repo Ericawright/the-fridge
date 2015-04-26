@@ -74,13 +74,14 @@ end
 
 post '/search' do
 
-  display_result = []
+  @display_result = []
   Recipe.all.each do |recipe|
     if recipe.ingredients.count < params[:ingredients].length
-      if recipe.ingredients.name.all? {|ingredient| params[:ingredients].include?(ingredient)}
-        display_result << recipe
+      if recipe.ingredients.all? {|ingredient| params[:ingredients].include?(ingredient.name)}
+        @display_result << recipe
       end
     end
+  end
   erb :search
 end
 

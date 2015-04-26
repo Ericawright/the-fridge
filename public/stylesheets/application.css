@@ -43,7 +43,7 @@ h1 {
   border-style: solid;
   border-color: #c4d9df #a4c3ca #83afb7;            
   width: 500px;
-  height: 60px;
+  height: auto;
   padding: 10px;
   overflow: hidden;
   position: absolute;
