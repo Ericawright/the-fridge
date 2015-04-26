@@ -45,7 +45,7 @@ body.results {
   border: 2px solid #3867F5;
 }
 
-h1 {
+/*h1 {
   font-family: 'Laila', serif;
   position: absolute;
   top: 0;
@@ -55,7 +55,7 @@ h1 {
   font-size: 45px;
   text-shadow: 2px 2px 2px black;
   letter-spacing: 3px;
-}
+}*/
 
 #login-title {
   position: absolute;
@@ -239,3 +239,20 @@ h2 {
   margin-right: 25%;
 }
 
+.col-md-8.col-md-offset-2{
+  display: table-cell;
+  height: 150px;
+}
+
+.wiyf {
+  font-family: 'Laila', serif;
+  color: white;
+  font-size: 45px;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 3px;
+  margin-left: 15%;
+  margin-top: 2em;
+}
+.col-md-8.search {
+  height: 150px;
+}
