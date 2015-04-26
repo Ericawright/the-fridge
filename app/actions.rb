@@ -69,13 +69,12 @@ end
 get '/search' do
   erb :search
 end
+
 post '/search' do
   local_params = []
   params[:ingredients].each do |x|
     p Ingredient.where(name: x)
   end
-
-
   erb :search
 end
 
