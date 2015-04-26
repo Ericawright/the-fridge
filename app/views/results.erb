@@ -17,16 +17,22 @@
 </fieldset> -->
 
 <%@query['matches'].each do |match|%>
+  <%reformat_image = match['imageUrlsBySize']['90'].gsub('90-c', '360-c')%>
   <div class="row matches">
-    <div class="col-md-4 col-md-offset-2 left" id="results-left"><img class="image-results" width="300px"height="300px" src="<%=match['imageUrlsBySize']['90']%>"> 
+    <div class="col-md-4 col-md-offset-2 left" id="results-left"><img class="image-results" width="300px"height="300px" src="<%=reformat_image%>"> 
     </div>
     <div class="col-md-6 right" id="results-right">
-      <h3 class="recipe_name"><strong><em><%=match['recipeName']%></em></strong></h3>
+      <h3 class="recipe_name"><a href="/showyummly/<%=match['id']%>"><strong><em><%=match['recipeName']%></em></strong></h3></a>
       <p class="rating2"><strong>Rating: </strong><%=match['rating']%><p>
       <li class="ingredients"><strong>Ingredients: </strong><%=match['ingredients'].join(", ")%></li>
     </div>
   </div>
 <%end%>
+
+
+
+
+
 
 
 
