@@ -216,25 +216,26 @@ h2 {
 /*below is the css for the results page
 */
 
-.image-results {
-  margin-left: 20%;
-  margin-bottom: 20%;
-  position: absolute;
+#results-left {
+  padding-left: 6%;
+  margin-top: 2%;
+}
+ 
+ .image-results {
   border: 2px solid black;
   box-shadow: 10px 10px 10px #747070;
 }
 
-.recipe_name {
-  margin-left: 46%;
-  margin-bottom: -5%;
-}
-
-
-.recipe-details {
-  margin-left: 46%;
-  margin-bottom: 10%;
-  margin-right: 20%;
+.rating2 {
   font-size: 1.5em;
 }
 
+.ingredients {
+  font-size: 1.3em;
+  margin-right: 25%;
+}
+
+.recipe_name {
+  margin-right: 25%;
+}
 
