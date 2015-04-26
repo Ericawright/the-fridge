@@ -4,15 +4,15 @@
 <div id="results">
   <%@display_result.each do |match|%>
   <br><br>
-  <h3 class="recipe_name"><%=match[:name]%></h3>
+  <a href="/showlocal/<%=match[:id]%>"><h3 class="recipe_name"><%=match[:name]%></h3></a>
   
   <br>
   <br>
   <div class="recipe-details">
     <p class="time">Cooking time: <%=match[:cook_time]/60%> minutes</p>
     <p class="picture">Picture: <%=match[:picture]%><p>
-    </div>
-    <%end%>
+  </div>
+  <%end%>
 
  </div>
 

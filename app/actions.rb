@@ -94,6 +94,10 @@ post '/search' do
   erb :search
 end
 
+get '/showlocal/:id' do
+  @specific_result = Recipe.find(params[:id])
+  erb :'showlocal'
+end
 
 
 
