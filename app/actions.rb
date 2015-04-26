@@ -19,6 +19,8 @@ get '/' do
   erb :index
 end
 
+####################### user stuff#############
+
 get '/signup' do
   erb :signup
 end
@@ -52,6 +54,8 @@ get '/logout' do
   redirect '/'
 end
 
+
+########################## yummly stuff #########################
 get '/yummly' do
   erb :yummly
 end
@@ -70,7 +74,13 @@ post '/results' do
   erb :results
 end
 
+get '/showyummly/:id' do
+  @specific_query = HTTParty.get("http://api.yummly.com/v1/api/recipe/#{params[:id]}?_app_id=dde5d0a1&_app_key=415fb0f76cf84cce66da1807fe54369d")
+  erb :'showyummly'
+end
 
+
+####################### local stuff #############################
 
 post '/search' do
   @display_result = []
@@ -83,6 +93,7 @@ post '/search' do
   end
   erb :search
 end
+
 
 
 
