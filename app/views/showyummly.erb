@@ -1,10 +1,10 @@
- <%@specific_query['name']%>
 
-
-  <div class="col-md-4 col-md-offset-2 left" id="results-left"><img class="image-results" width="300px"height="300px" src="<%=match['imageUrlsBySize']['90']%>"> 
+ <div class="col-md-4 col-md-offset-2 left"><img class="image-results" width="300px"height="300px" src="<%=@specific_query['images'][0]['imageUrlsBySize']['360']%>"> 
     </div>
     <div class="col-md-6 right" id="results-right">
       <h3 class="recipe_name"><strong><em><%=@specific_query['name']%></em></strong></h3>
-      <p class="source"><strong>source: </strong><%= @specific_quert['source']['sourceRecipeUrl'][%><p>
+      <p class="source"><strong>source: </strong><%= @specific_query['source']['sourceRecipeUrl']%><p>
       <li class="ingredients"><strong>Ingredients: </strong><%=@specific_query['ingredientLines'].join(", ")%></li>
     </div>
+
+ 

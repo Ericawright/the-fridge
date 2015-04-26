@@ -75,7 +75,7 @@ post '/results' do
 end
 
 get '/showyummly/:id' do
-  @specific_query = HTTParty.get("http://api.yummly.com/v1/api/recipe/#{:id}?_app_id=dde5d0a1&_app_key=415fb0f76cf84cce66da1807fe54369d")
+  @specific_query = HTTParty.get("http://api.yummly.com/v1/api/recipe/#{params[:id]}?_app_id=dde5d0a1&_app_key=415fb0f76cf84cce66da1807fe54369d")
   erb :'showyummly'
 end
 
