@@ -161,7 +161,7 @@ body.results {
 
 h2 {
   font-size: 13px;
-  margin-left: 73em;
+  margin-left: 50em;
   margin-top: 1.4em;
 }
 
@@ -234,10 +234,45 @@ h2 {
   padding-left: 10%;
   margin-top: 2%;
 }
+
+#results-right {
+  padding-left: 5%;
+}
  
  .image-results {
   border: 2px solid black;
   box-shadow: 10px 10px 10px #747070;
+}
+
+/*showyummly results page css and styling
+*/
+.image-results-yummly {
+  margin-left: 15%;
+  margin-top: 30%;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px #747070;
+}
+
+.results-right-yummly {
+  margin-right: 15%;
+  padding-right: 5%;
+}
+
+.recipe_name-yummly {
+  margin-right: 25%;
+  margin-top: 19%;
+}
+
+.source-yummly {
+  margin-top: 1%;
+  margin-right: 35%;
+  font-size: 1.3em;
+}
+
+.ingredients-yummly {
+  margin-top: 1%;
+  font-size: 1.2em;
+  margin-right: 25%;
 }
 
 .rating2 {
