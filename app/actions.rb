@@ -66,9 +66,17 @@ post '/results' do
   # @detail_link = HTTParty.get("http://api.yummly.com/v1/api/recipe/#{@query['matches'][@selection][@id]}?_app_id=dde5d0a1&_app_key=415fb0f76cf84cce66da1807fe54369d")
   erb :results
 end
-
+get '/search' do
+  erb :search
+end
 post '/search' do
+  local_params = []
+  params[:ingredients].each do |x|
+    p Ingredient.where(name: x)
+  end
 
+
+  erb :search
 end
 
 
