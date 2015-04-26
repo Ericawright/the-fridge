@@ -53,6 +53,24 @@
   /*box-shadow: 7px 5px 5px #808080;*/
 }
 
+#yummly-searchbox {
+  background-color: #229cdc;
+  background-image: linear-gradient(#3867F5);
+  border-radius: 35px;    
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c4d9df #a4c3ca #83afb7;            
+  width: 500px;
+  height: auto;
+  padding: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  margin-top: 1em;
+  margin-left: 16.5%;
+  /*box-shadow: 7px 5px 5px #808080;*/
+}
+
 #search {
   width: 325px;
   height: 35px;

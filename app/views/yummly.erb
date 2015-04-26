@@ -1,13 +1,14 @@
+<% @body_class = "yummly" %>
 
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <h1 class="wiyf"><strong><em>What's in your fridge?</em></strong></h1>
+      <h1 class="yummly-title"><strong><em>Search by main ingredient!</em></strong></h1>
     </div>
   </div>
   <div class="row">
     <div class="col-md-8 col-md-offset-2 search">
-      <form id="searchbox" action="/results" method="post">
+      <form id="yummly-searchbox" action="/results" method="post">
         <input name = 'ingred[]' id="search" type="text" placeholder="Type here">
         <input id="submit" type="submit" value="Let's Cook!">
       </form>

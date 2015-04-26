@@ -13,12 +13,26 @@ body{
   background-attachment: fixed;
 }
 
+/*bachelor mode search and search results css
+*/
+
 body.homepage {
   background-image: url("../images/fridge.jpg");
 }
 
+body.search {
+  background-image: url("../images/empty-fridge.jpg")
+}
+
+/*yummly search and search results css
+*/
+
+body.yummly {
+  background-image: url("../images/veggies.jpg")
+}
+
 body.results {
-  background-image: url("../images/empty-fridge.jpg");
+  background-image: url("../images/spoon.jpg");
 }
 
 /*below is the css for the forms*/
@@ -217,7 +231,7 @@ h2 {
 */
 
 #results-left {
-  padding-left: 6%;
+  padding-left: 10%;
   margin-top: 2%;
 }
  
@@ -256,3 +270,14 @@ h2 {
 .col-md-8.search {
   height: 150px;
 }
+
+.yummly-title {
+  font-family: 'Laila', serif;
+  color: white;
+  font-size: 35px;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 3px;
+  margin-left: 15%;
+  margin-top: 2em;
+}
+
