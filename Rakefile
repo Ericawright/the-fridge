@@ -82,7 +82,7 @@ In a medium frying pan, saute chicken breasts in olive oil until lightly browned
 In a small saucepan, melt butter over medium heat. Whisk in flour and cook for 1-2 minutes to eliminate the taste of raw flour. Then gradually whisk in cream soup. Bring to a boil and then reduce to a simmer until the sauce is the consistency you desire. Add 3/4 of the cheese blend and whisk until combined. Add salt and pepper to taste.
 In a 9x13 dish arrange chicken breasts (either whole or sliced) and broccoli. Pour sauce over top and sprinkle with remaining cheese. Cover with aluminum foil. Make several slits in the aluminum foil to allow the steam to escape.
 Note: At this point, the dish can be frozen or refrigerated.
-Bake in the oven for 30-45 minutes, taking off the aluminum foil for the last 10.", picture: 'http://s3.amazonaws.com/gmi-digital-library/04619119-584e-483d-a18d-0d57c55e8aa5.jpg').ingredients << Ingredient.find(2) <<Ingredient.find(3) << Ingredient.find(4) << Ingredient.find(5) << Ingredient.find(8) << Ingredient.find(9) << Ingredient.find(13)
+Bake in the oven for 30-45 minutes, taking off the aluminum foil for the last 10.", picture: 'http://s3.amazonaws.com/gmi-digital-library/04619119-584e-483d-a18d-0d57c55e8aa5.jpg').ingredients << Ingredient.find(2) <<Ingredient.find(3) << Ingredient.find(4) << Ingredient.find(5) << Ingredient.find(13)
 
   Recipe.create!(name: "Chicken Cordon Bleu", cook_time: 2700, body: "4 skinless, boneless chicken breast halves
  1/4 teaspoon salt
@@ -94,7 +94,7 @@ Bake in the oven for 30-45 minutes, taking off the aluminum foil for the last 10
 Pound chicken breasts to 1/4 inch thickness.
 Sprinkle each piece of chicken on both sides with salt and pepper. Place 1 cheese slice and 1 ham slice on top of each breast. Roll up each breast, and secure with a toothpick. Place in baking dish, and sprinkle chicken evenly with bread crumbs.
 Bake for 30 to 35 minutes, or until chicken is no longer pink. Remove from oven, and place 1/2 cheese slice on top of each breast. Return to oven for 3 to 5 minutes, or until cheese has melted. Remove toothpicks, and serve immediately.
- ", picture: 'http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2009/2/25/0/TU0609-1_Chicken-Cordon-Bleu_s4x3.jpg.rend.sni12col.landscape.jpeg').ingredients << Ingredient.find(2) << Ingredient.find(6) << Ingredient.find(4) << Ingredient.find(8) << Ingredient.find(9) << Ingredient.find(19)
+ ", picture: 'http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2009/2/25/0/TU0609-1_Chicken-Cordon-Bleu_s4x3.jpg.rend.sni12col.landscape.jpeg').ingredients << Ingredient.find(2) << Ingredient.find(6) << Ingredient.find(4) << Ingredient.find(19)
 
   Recipe.create!(name: "Salmon with Brown Sugar Glaze", cook_time: 900, body: "1/4 cup packed light brown sugar
  2 tablespoons Dijon mustard
@@ -102,7 +102,8 @@ Bake for 30 to 35 minutes, or until chicken is no longer pink. Remove from oven,
  salt and ground black pepper to taste
  Preheat the oven's broiler and set the oven rack at about 6 inches from the heat source; prepare the rack of a broiler pan with cooking spray.
 Season the salmon with salt and pepper and arrange onto the prepared broiler pan. Whisk together the brown sugar and Dijon mustard in a small bowl; spoon mixture evenly onto top of salmon fillets.
-Cook under the preheated broiler until the fish flakes easily with a fork, 10 to 15 minutes.", picture:'http://www.ezrapoundcake.com/wp-content/uploads/2008/09/salmon1.jpg').ingredients << Ingredient.find(8) << Ingredient.find(9) << Ingredient.find(10) << Ingredient.find(11) << Ingredient.find(12)
+Cook under the preheated broiler until the fish flakes easily with a fork, 10 to 15 minutes.", picture:'http://www.ezrapoundcake.com/wp-content/uploads/2008/09/salmon1.jpg').ingredients << Ingredient.find(10) << Ingredient.find(11) << Ingredient.find(12) 
+
 
 
   Recipe.create!(name: "Aimee's Quick Chicken", cook_time: 2100, body: "4 skinless, boneless chicken breast halves
@@ -136,7 +137,7 @@ Recipe.create!(name: "Simple Roasted Butternut Squash", cook_time: 2400, body: "
  salt and ground black pepper to taste
  Preheat oven to 400 degrees F (200 degrees C).
 Toss butternut squash with olive oil and garlic in a large bowl. Season with salt and black pepper. Arrange coated squash on a baking sheet.
-Roast in the preheated oven until squash is tender and lightly browned, 25 to 30 minutes.", picture: 'http://www.inspiredtaste.net/wp-content/uploads/2013/10/Roasted-Butternut-Squash-Recipe-2.jpg').ingredients << Ingredient.find(20) << Ingredient.find(21) << Ingredient.find(22) << Ingredient.find(8) << Ingredient.find(9)
+Roast in the preheated oven until squash is tender and lightly browned, 25 to 30 minutes.", picture: 'http://www.inspiredtaste.net/wp-content/uploads/2013/10/Roasted-Butternut-Squash-Recipe-2.jpg').ingredients << Ingredient.find(20) << Ingredient.find(22)
  
  Recipe.create!(name: "Fried Cabbage", cook_time: 2700, body: "1 pound bacon, diced
  2 onions, chopped
@@ -151,7 +152,7 @@ Roast in the preheated oven until squash is tender and lightly browned, 25 to 30
 Preheat a grill for medium heat.
 Brush the potato tops with olive oil, and season with salt and pepper to taste.
 Cook on prepared grill for 15 to 20 minutes, turning once.", picture: 'http://cdn.instructables.com/FSL/MAW3/HFSHE41E/FSLMAW3HFSHE41E.LARGE.jpg').ingredients << Ingredient.find(27) 
-  # << Ingredient.find(8) << Ingredient.find(9) << Ingredient.find(21)
+ 
 
 
   Recipe.create!(name: "Glazed Carrots", cook_time: 1500, body: "2 pounds carrots, peeled and cut into sticks
@@ -161,6 +162,5 @@ Cook on prepared grill for 15 to 20 minutes, turning once.", picture: 'http://cd
  1/8 teaspoon ground white pepper
  Place carrots into a large saucepan, pour in enough water to reach depth of 1 inch, and bring to a boil. Reduce heat to low, cover, and simmer carrots until tender, 8 to 10 minutes. Drain and transfer to a bowl.
 Melt butter in the same saucepan; stir brown sugar, salt, and white pepper into butter until brown sugar and salt have dissolved. Transfer carrots into brown sugar sauce; cook and stir until carrots are glazed with sauce, about 5 more minutes.", picture: 'http://www.bestcarrotrecipe.com/image-files/glazed-carrot-recipe.jpg').ingredients << Ingredient.find(28) 
-  # << Ingredient.find(8) << Ingredient.find(9) << Ingredient.find(11)
 end
 
