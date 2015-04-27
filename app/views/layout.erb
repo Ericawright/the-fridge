@@ -42,9 +42,10 @@
     <ul class="nav navbar-nav navbar-right">
       <li>
         <% if current_user %>
-        <a href="/logout">Logout</a>
+        <li><a href="/logout">Logout</a></li>
+        <li><a href = "/add">Submit Recipe</a></li>
         <% else %>
-        <a href="/login">Login</a>
+        <li><a href="/login">Login</a></li>
         <% end %>
       </li>
       <li><a href="/signup">Create Profile</a></li>

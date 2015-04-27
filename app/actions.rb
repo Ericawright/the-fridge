@@ -76,7 +76,7 @@ end
 
 get '/showyummly/:id' do
   @specific_query = HTTParty.get("http://api.yummly.com/v1/api/recipe/#{params[:id]}?_app_id=dde5d0a1&_app_key=415fb0f76cf84cce66da1807fe54369d")
-  erb :'showyummly'
+  erb :showyummly
 end
 
 
@@ -96,9 +96,32 @@ end
 
 get '/showlocal/:id' do
   @specific_result = Recipe.find(params[:id])
-  erb :'showlocal'
+  erb :showlocal
 end
 
+#################### add recipes #######################
+
+get '/add' do 
+   erb :add
+end
+
+post '/add' do 
+
+ @recipe = Recipe.new(
+    name: params[:name],
+    ingred: params[:ingredients],
+    body:  params[:body],
+    picture: params[:picture],
+    cook_time: params[:cook_time]
+  )
+  @recipe.save
+
+  params[:individual_ingredients[]].each do |ingredient|
+    @recipe << Ingredient.where(name: ingredient).first_or_create! 
+  end
+
+   erb :add
+end
 
 
 
