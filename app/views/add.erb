@@ -1,4 +1,16 @@
 
+
+<% if @recipe && @recipe.errors.any? %>
+  <div>
+    <strong>There are some issues with your recipe, please fix them:</strong>
+    <ul>
+      <% @recipe.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <h1 id="submit-recipe"><strong><em>Submit New Recipe</em></strong></h1>
 
 <form class="form-horizontal" id="newRecipe" action="/add" method="post">

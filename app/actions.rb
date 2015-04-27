@@ -115,9 +115,16 @@ post '/add' do
     cook_time: params[:cook_time]
   )
   @recipe.save
+  if @recipe.save
+    redirect '/'
+  else
+    erb :'/add'
+  end
 
-  params[:individual_ingredients[]].each do |ingredient|
-    @recipe << Ingredient.where(name: ingredient).first_or_create! 
+  if params[:individual_ingredients].empty?
+    params[:individual_ingredients].each do |ingredient|
+      @recipe.ingredients << Ingredient.where(name: ingredient).first_or_create! 
+    end
   end
 
    erb :add
