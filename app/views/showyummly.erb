@@ -4,8 +4,8 @@
     </div>
     <div class="col-md-6 right" id="results-right-yummly">
       <h3 class="recipe_name-yummly"><strong><em><%=@specific_query['name']%></em></strong></h3>
-      <p class="source-yummly"><strong>Source: </strong><%= @specific_query['source']['sourceRecipeUrl']%><p>
-      <li class="ingredients-yummly"><strong>Ingredients: </strong><%=@specific_query['ingredientLines'].join(", ")%></li>
+      <p class="source-yummly"><a href=<%= @specific_query['source']['sourceRecipeUrl']%> target="_blank"><strong>Click for full directions</strong></a><p>
+      <li class="ingredients-yummly"><strong>Ingredients: <br><%=@specific_query['ingredientLines'].join(", ")%></strong></li>
     </div>
 
  
