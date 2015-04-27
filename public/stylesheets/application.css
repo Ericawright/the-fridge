@@ -53,6 +53,22 @@
   /*box-shadow: 7px 5px 5px #808080;*/
 }
 
+#search-yummly {
+  width: 295px;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+#submit-yummly {
+  width: 145px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-left: 30px;
+}
+
 #yummly-searchbox {
   background-color: #229cdc;
   background-image: linear-gradient(#3867F5);
@@ -72,7 +88,7 @@
 }
 
 #search {
-  width: 325px;
+  width: 275px;
   height: 35px;
   border-radius: 20px;
   padding-left: 15px;
@@ -84,5 +100,14 @@
   height: 35px;
   border-radius: 20px;
   font-size: 18px;
-  margin-left: 4px;
+  margin-left: 54px;
+}
+
+.add-ingredient {
+  border-radius: 15px;
+  margin-left: .3%;
+  position: relative;
+  margin-left: 58.7%;
+  margin-top: 3.5%;
+  height: 35px;
 }

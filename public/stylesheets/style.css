@@ -275,6 +275,28 @@ h2 {
   margin-right: 25%;
 }
 
+/*show local results css and style
+*/
+
+.image-results-local {
+  margin-left: 15%;
+  margin-top: 30%;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px #747070;
+}
+
+.recipe_name-local {
+  margin-right: 25%;
+  margin-top: 20%;
+  padding-right: 10%;
+}
+
+.ingredients-local {
+  margin-top: 1%;
+  font-size: 1.2em;
+  margin-right: 25%;
+}
+
 .rating2 {
   font-size: 1.5em;
 }
