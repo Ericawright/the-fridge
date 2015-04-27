@@ -21,14 +21,18 @@ body.homepage {
 }
 
 body.search {
-  background-image: url("../images/empty-fridge.jpg")
+  background-image: url("../images/empty-fridge.jpg");
+}
+
+body.add {
+  background-image: url("../images/chop-block.jpg");
 }
 
 /*yummly search and search results css
 */
 
 body.yummly {
-  background-image: url("../images/veggies.jpg")
+  background-image: url("../images/veggies.jpg");
 }
 
 body.results {
@@ -161,8 +165,9 @@ body.results {
 
 h2 {
   font-size: 13px;
-  margin-left: 53em;
+  margin-left: 6em;
   margin-top: 1.4em;
+  float: right;
 }
 
 #recipes {
@@ -338,3 +343,54 @@ h2 {
   margin-top: 2em;
 }
 
+/*below is the add recipe page style and css
+*/
+
+#submit-recipe {
+  text-align: center;
+  margin-top: 5%;
+  font-family: 'Laila', serif;
+  color: white;
+  font-size: 45px;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 3px;
+}
+
+#newRecipe {
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+#addnewrecipe{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.add-ingred {
+  color: black;
+ border-radius: 20px;
+ /*border: 2px solid #3867F5;*/
+ width: 180px;
+ height: 25px;
+ font-size: 14px;
+ position: relative;
+ margin-right: 10%;
+ margin-bottom: 3%;
+ float: right;
+ opacity: 0.6; 
+ background-color: #ffffff;
+}
+
+#submit-recipe-button {
+  margin-top: 5px;
+  width: 100px;
+}
+
+.cooktime {
+  width: 32%;
+}
+
+.picture {
+  width: 67%;
+}
