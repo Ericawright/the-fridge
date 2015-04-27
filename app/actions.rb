@@ -69,7 +69,7 @@ post '/results' do
   
   @formatted_params = gather_params.join('&allowedIngredient[]=')
 
-  @query = HTTParty.get("http://api.yummly.com/v1/api/recipes?_app_id=dde5d0a1&_app_key=415fb0f76cf84cce66da1807fe54369d&allowedIngredient[]=#{@formatted_params}")
+  @query = HTTParty.get("http://api.yummly.com/v1/api/recipes?_app_id=dde5d0a1&_app_key=415fb0f76cf84cce66da1807fe54369d&allowedIngredient[]=#{@formatted_params}&maxResult=50")
 
   erb :results
 end
@@ -121,7 +121,7 @@ post '/add' do
     erb :'/add'
   end
 
-  if params[:individual_ingredients].empty?
+  if !params[:individual_ingredients][0].empty?
     params[:individual_ingredients].each do |ingredient|
       @recipe.ingredients << Ingredient.where(name: ingredient).first_or_create! 
     end

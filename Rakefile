@@ -54,7 +54,6 @@ task "db:populate" do
   Ingredient.create!(name: "bread crumbs")
   Ingredient.create!(name: "squash")
 
-
   Ingredient.create!(name: "oil")
   Ingredient.create!(name: "garlic")
   Ingredient.create!(name: "bacon")
@@ -67,9 +66,23 @@ task "db:populate" do
   Ingredient.create!(name: "mushroom")
 
   Ingredient.create!(name: "cream of mushroom soup")
-  Ingredient.create!(name: "refried beans")
+  Ingredient.create!(name: "beans")
   Ingredient.create!(name: "tortilla")
   Ingredient.create!(name: "salsa")
+  Ingredient.create!(name: "egg")
+  Ingredient.create!(name: "peanut butter")
+  Ingredient.create!(name: "nutella")
+  Ingredient.create!(name: "graham cracker")
+  Ingredient.create!(name: "cream cheese")
+  Ingredient.create!(name: "cool whip")
+
+  Ingredient.create!(name: "cauliflower")
+  Ingredient.create!(name: "lettuce")
+  Ingredient.create!(name: "barbeque sauce")
+  Ingredient.create!(name: "jam")
+  Ingredient.create!(name: "mayonaise")
+
+
 
   
 
@@ -165,26 +178,67 @@ Cook on prepared grill for 15 to 20 minutes, turning once.", picture: 'http://cd
  1/4 cup packed brown sugar
  1/4 teaspoon salt
  1/8 teaspoon ground white pepper",
- body: "Place carrots into a large saucepan, pour in enough water to reach depth of 1 inch, and bring to a boil. Reduce heat to low, cover, and simmer carrots until tender, 8 to 10 minutes. Drain and transfer to a bowl.
-Melt butter in the same saucepan; stir brown sugar, salt, and white pepper into butter until brown sugar and salt have dissolved. Transfer carrots into brown sugar sauce; cook and stir until carrots are glazed with sauce, about 5 more minutes.", picture: 'http://www.bestcarrotrecipe.com/image-files/glazed-carrot-recipe.jpg').ingredients << Ingredient.find(28) 
+ body: "Place carrots into a large saucepan, pour in enough water to reach depth of 1 inch, and bring to a boil. Reduce heat to low, cover, and simmer carrots until tender, 8 to 10 minutes. Drain and transfer to a bowl. Melt butter in the same saucepan; stir brown sugar, salt, and white pepper into butter until brown sugar and salt have dissolved. Transfer carrots into brown sugar sauce; cook and stir until carrots are glazed with sauce, about 5 more minutes.", picture: 'http://www.bestcarrotrecipe.com/image-files/glazed-carrot-recipe.jpg').ingredients << Ingredient.find(28) 
 
-   Recipe.create!(name: "Mushroom Pork Chops", cook_time: 2400, ingred: "
+  Recipe.create!(name: "Mushroom Pork Chops", cook_time: 2400, ingred: "
    4 pork chops
    salt and pepper to taste
    1 pinch garlic salt, or to taste
    1 onion, chopped
    1/2 pound fresh mushrooms, sliced
-   1 (10.75 ounce) can condensed cream of mushroom soup",
-   body: "Season pork chops with salt, pepper, and garlic salt to taste.
-   In a large skillet, brown the chops over medium-high heat. Add the onion and mushrooms, and saute for one minute. Pour cream of mushroom soup over chops. Cover skillet, and reduce temperature to medium-low. Simmer 20 to 30 minutes, or until chops are cooked through.", picture: 'http://images.media-allrecipes.com/userphotos/250x250/714402.jpg').ingredients << Ingredient.find(29) << Ingredient.find(24) << Ingredient.find(30) << Ingredient.find(31) 
+   1 (10.75 ounce) can condensed cream of mushroom soup", body: "Season pork chops with salt, pepper, and garlic salt to taste. In a large skillet, brown the chops over medium-high heat. Add the onion and mushrooms, and saute for one minute. Pour cream of mushroom soup over chops. Cover skillet, and reduce temperature to medium-low. Simmer 20 to 30 minutes, or until chops are cooked through.", picture: 'http://images.media-allrecipes.com/userphotos/250x250/714402.jpg').ingredients << Ingredient.find(29) << Ingredient.find(24) << Ingredient.find(30) << Ingredient.find(31) 
 
 
   Recipe.create!(name: "Mexican Casserole", cook_time: 1800, ingred: "1 (16 ounce) can refried beans
- 3/4 onion, diced
- 5 (10 inch) flour tortillas
- 1 cup salsa
- 2 cups shredded Cheddar or Colby Jack cheese",
- body: "Preheat oven to 375 degrees F (190 degrees C). Spray a 9-inch pie pan with non-stick cooking spray. In a saucepan, cook refried beans and onions (to soften them) on medium-high heat for about 5 minutes. Place one tortilla in the bottom of the greased pan. Spread about 1/3 cup of the bean mixture over it. Layer a few tablespoons of salsa over this. Then, place another tortilla over the salsa, and add more of the bean mixture. Follow the beans with a big handful of cheese, spreading evenly. repeat layers, spreading the ingredients evenly over the tortillas. On the top layer, make sure to use lots of salsa and cheese! Bake until the cheese is melted, approximately 15 to 20 minutes.", picture: 'http://images.media-allrecipes.com/userphotos/250x250/252212.jpg').ingredients << Ingredient.find(24) << Ingredient.find(32) << Ingredient.find(33) << Ingredient.find(34) << Ingredient.find(4) 
+ 3/4 onion, diced,
+ 5 (10 inch) flour tortillas,
+ 1 cup salsa,
+ 2 cups shredded Cheddar or Colby Jack cheese", body: "Preheat oven to 375 degrees F (190 degrees C). Spray a 9-inch pie pan with non-stick cooking spray. In a saucepan, cook refried beans and onions (to soften them) on medium-high heat for about 5 minutes. Place one tortilla in the bottom of the greased pan. Spread about 1/3 cup of the bean mixture over it. Layer a few tablespoons of salsa over this. Then, place another tortilla over the salsa, and add more of the bean mixture. Follow the beans with a big handful of cheese, spreading evenly. repeat layers, spreading the ingredients evenly over the tortillas. On the top layer, make sure to use lots of salsa and cheese! Bake until the cheese is melted, approximately 15 to 20 minutes.", picture: 'http://images.media-allrecipes.com/userphotos/250x250/252212.jpg').ingredients << Ingredient.find(24) << Ingredient.find(32) << Ingredient.find(33) << Ingredient.find(34) << Ingredient.find(4) 
 
+  Recipe.create!(name: "Peanut Butter Cookies", cook_time: 1800, ingred: "1 cup peanut butter (your choice, smooth or chunky),
+    1 cup granulated sugar,
+    1 large egg", body: "Mix peanut butter, sugar, and egg together until smooth. Drop by teaspoon onto cookie sheet two inches apart. If desired, roll in extra sugar before placing on cookie sheet. Press with fork; press again in opposite direction. Bake 10 to 12 minutes at 350 degrees Fahrenheit. Do not brown; do not over bake.", picture: 'http://img.sndimg.com/food/image/upload/w_555,h_416,c_fit,fl_progressive,q_95/v1/img/recipes/15/41/1/picGTBWsR.jpg').ingredients << Ingredient.find(11) << Ingredient.find(35) << Ingredient.find(36) 
+
+  Recipe.create!(name: "No Bake Nutella Pie", cook_time: 15000, ingred: "1 (13 ounce) jar chocolate-hazelnut spread (such as Nutella®), divided
+ 1 (9 inch) prepared graham cracker crust
+ 1 (8 ounce) package cream cheese, softened
+ 1 (8 ounce) container frozen whipped topping, thawed", body: "Spread 1/4 cup of the hazelnut spread over the bottom of the graham cracker crust.
+Beat remaining hazelnut spread and cream cheese together in a bowl until smooth. Fold whipped topping into the cream cheese mixture; pour into the pie crust and spread evenly.
+Refrigerate until well chilled, 4 hours to overnight.", picture: 'http://images.media-allrecipes.com/userphotos/250x250/02/08/64/2086442.jpg').ingredients << Ingredient.find(37) << Ingredient.find(38) << Ingredient.find(39) << Ingredient.find(40)
+
+   Recipe.create!(name: "No Bake Nutella Pie", cook_time: 15000, ingred: "1 (13 ounce) jar chocolate-hazelnut spread (such as Nutella®), divided
+ 1 (9 inch) prepared graham cracker crust
+ 1 (8 ounce) package cream cheese, softened
+ 1 (8 ounce) container frozen whipped topping, thawed", body: "Spread 1/4 cup of the hazelnut spread over the bottom of the graham cracker crust.
+Beat remaining hazelnut spread and cream cheese together in a bowl until smooth. Fold whipped topping into the cream cheese mixture; pour into the pie crust and spread evenly.
+Refrigerate until well chilled, 4 hours to overnight.", picture: 'http://images.media-allrecipes.com/userphotos/250x250/02/08/64/2086442.jpg').ingredients << Ingredient.find(37) << Ingredient.find(38) << Ingredient.find(39) << Ingredient.find(40)
+
+  Recipe.create!(name: "Mashed Cauliflower", cook_time: 1200, ingred: "1 head cauliflower, cut into florets
+ 1/2 cup whipped cream cheese
+ 2 cloves garlic, minced
+ 1 teaspoon seasoned salt (such as LAWRY'S®), or to taste", body: "Bring a large pot of lightly salted water to a boil. Cook cauliflower in boiling water until tender, about 6 minutes; drain. Pat cauliflower dry with paper towel to remove as much moisture as possible.
+Blend cauliflower, cream cheese, garlic, and seasoned salt in a food processor until mostly smooth.", picture: 'http://images.media-allrecipes.com/userphotos/250x250/01/08/50/1085005.jpg').ingredients << Ingredient.find(22) << Ingredient.find(39) << Ingredient.find(41)
+
+  Recipe.create!(name: "Grilled Romain", cook_time: 600, ingred: "1 tablespoon olive oil
+ 1 head romaine lettuce, cut in half lengthwise
+ 1 tablespoon steak seasoning
+ 1 lemon, juiced", body: "Preheat grill for medium heat and lightly oil the grate. Drizzle olive oil over romaine lettuce and season with steak seasoning.
+Place lettuce cut side-down on preheated grill. Cook until lettuce is slightly wilted and charred, about 5 minutes. Drizzle with lemon juice to serve.", picture: 'http://images.media-allrecipes.com/userphotos/250x250/842756.jpg').ingredients << Ingredient.find(42)
+
+  Recipe.create!(name: "Keep it Simple Salmon", cook_time: 2700, ingred: "2 (6 ounce) salmon filets, skin on
+ 1/4 cup barbeque sauce
+ 1/4 cup seedless raspberry jam", body: "Preheat oven to 400 degrees F (200 degrees C).
+Grease an 11x7-inch baking dish.
+Place the salmon fillets into the prepared baking dish with skin sides down.
+Stir the barbeque sauce and raspberry jam together in a small bowl.
+Generously brush the mixture over the salmon.
+Bake in the preheated oven until the salmon is opaque and flakes easily with a fork, 35 to 40 minutes. Brush again with the sauce mixture after the first 15 minutes of baking time.", picture: 'http://images.media-allrecipes.com/userphotos/250x250/851722.jpg').ingredients << Ingredient.find(10) << Ingredient.find(43) << Ingredient.find(44)
+
+Recipe.create!(name: "Onion Baked Chicken", cook_time: 1800, ingred: "1 (1 ounce) onion powder
+ 1 cup bread crumbs
+ 4 skinless, boneless chicken breast halves
+ 1/2 cup mayonnaise", body: "Preheat an oven to 425 degrees F (220 degrees C). Combine the soup mix and panko in a mixing bowl; set aside. Line a baking sheet with foil.
+Coat the chicken breasts all over with mayonnaise, then press into the panko mixture. Place the breasts on the baking sheet.
+Cook the chicken breasts until no longer pink in the center and the juices run clear, about 25 minutes. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C).", picture: 'http://hostedmedia.reimanpub.com/TOH/Images/Photos/37/300x300/exps42777_CFT1437885D45A.jpg').ingredients << Ingredient.find(2) << Ingredient.find(18) << Ingredient.find(45)
 
 end
