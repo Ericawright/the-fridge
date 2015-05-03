@@ -1,4 +1,4 @@
-#What's in your fridge?
+#What's in Your Fridge?
 
 App to figure out what to cook, given only what is curently in your fridge. Searches a database of recipies that will grow as users add new recipes. 
 
