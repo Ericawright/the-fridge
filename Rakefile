@@ -82,10 +82,6 @@ task "db:populate" do
   Ingredient.create!(name: "jam")
   Ingredient.create!(name: "mayonaise")
 
-
-
-  
-
   
 
    Recipe.delete_all
@@ -200,13 +196,6 @@ Cook on prepared grill for 15 to 20 minutes, turning once.", picture: 'http://cd
     1 large egg", body: "Mix peanut butter, sugar, and egg together until smooth. Drop by teaspoon onto cookie sheet two inches apart. If desired, roll in extra sugar before placing on cookie sheet. Press with fork; press again in opposite direction. Bake 10 to 12 minutes at 350 degrees Fahrenheit. Do not brown; do not over bake.", picture: 'http://img.sndimg.com/food/image/upload/w_555,h_416,c_fit,fl_progressive,q_95/v1/img/recipes/15/41/1/picGTBWsR.jpg').ingredients << Ingredient.find(11) << Ingredient.find(35) << Ingredient.find(36) 
 
   Recipe.create!(name: "No Bake Nutella Pie", cook_time: 15000, ingred: "1 (13 ounce) jar chocolate-hazelnut spread (such as Nutella®), divided
- 1 (9 inch) prepared graham cracker crust
- 1 (8 ounce) package cream cheese, softened
- 1 (8 ounce) container frozen whipped topping, thawed", body: "Spread 1/4 cup of the hazelnut spread over the bottom of the graham cracker crust.
-Beat remaining hazelnut spread and cream cheese together in a bowl until smooth. Fold whipped topping into the cream cheese mixture; pour into the pie crust and spread evenly.
-Refrigerate until well chilled, 4 hours to overnight.", picture: 'http://images.media-allrecipes.com/userphotos/250x250/02/08/64/2086442.jpg').ingredients << Ingredient.find(37) << Ingredient.find(38) << Ingredient.find(39) << Ingredient.find(40)
-
-   Recipe.create!(name: "No Bake Nutella Pie", cook_time: 15000, ingred: "1 (13 ounce) jar chocolate-hazelnut spread (such as Nutella®), divided
  1 (9 inch) prepared graham cracker crust
  1 (8 ounce) package cream cheese, softened
  1 (8 ounce) container frozen whipped topping, thawed", body: "Spread 1/4 cup of the hazelnut spread over the bottom of the graham cracker crust.
