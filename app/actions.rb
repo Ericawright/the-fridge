@@ -106,7 +106,6 @@ get '/add' do
 end
 
 post '/add' do 
-
  @recipe = Recipe.new(
     name: params[:name],
     ingred: params[:ingredients],
@@ -114,20 +113,17 @@ post '/add' do
     picture: params[:picture],
     cook_time: params[:cook_time]
   )
-  @recipe.save
-  if @recipe.save
+  if !params[:individual_ingredients][0].empty?
+    params[:individual_ingredients].each do |ingredient|
+      @recipe.ingredients << Ingredient.where(name: ingredient).first_or_create!
+    end
+  end
+ if @recipe.save 
     redirect '/'
   else
     erb :'/add'
   end
-
-  if !params[:individual_ingredients][0].empty?
-    params[:individual_ingredients].each do |ingredient|
-      @recipe.ingredients << Ingredient.where(name: ingredient).first_or_create! 
-    end
-  end
-
-   erb :add
+  erb :add
 end
 
 
