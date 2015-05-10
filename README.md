@@ -1,21 +1,11 @@
-Sinatra
-=============
+#What's in Your Fridge?
 
-Brought to you by Lighthouse Labs
+App to figure out what to cook, given only what is curently in your fridge. Searches a database of recipies that will grow as users add new recipes. 
 
-## Getting Started
+Lighthouse Labs mid-term project. Built using Sinatra framework. Also makes use of Yummly API to provide basic search functionality.
 
-1. `bundle install`
-2. `shotgun -p 3000 -o 0.0.0.0`
-3. Visit `http://localhost:3000/` in your browser
+## Future Plans:
 
-
-
-@query['matches'][0]['id']
-
-
-@query['matches'][0]['rating']
-@query['matches'][0]['totalTimeInSeconds']
-@query['matches'][0]['recipeName']
-@query['matches'][0]['ingredients']
-@query['matches'][0]['imageUrlsBySize']['90']
+- user can favorite recipes
+- user can review recipes with star rating
+- protection for passwords
